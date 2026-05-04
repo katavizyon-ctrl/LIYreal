@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud & Stone • Mohair & Memory</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    .hero-bg {
+      background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.35)), url('https://katavizyon-ctrl.github.io/LIYreal/attachments/image.png');
+      background-size: cover;
+      background-position: center;
+    }
+    .mohair-texture {
+      background-image: radial-gradient(circle at 25% 25%, rgba(255,255,255,0.9) 0%, transparent 50%);
+    }
+  </style>
+</head>
+<body class="bg-[#f8f5f2] text-stone-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+      <h1 class="text-2xl tracking-tight font-light">Cloud & Stone</h1>
+      <div class="space-x-8 text-sm font-light">
+        <a href="#story" class="hover:text-stone-500 transition">Story</a>
+        <a href="#details" class="hover:text-stone-500 transition">Details</a>
+        <a href="#order" class="hover:text-stone-500 transition">Order</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg h-screen flex items-center justify-center text-white pt-16">
+    <div class="max-w-3xl text-center px-6">
+      <h2 class="text-6xl md:text-7xl font-light tracking-tighter mb-4">One cloud.<br>One stone.</h2>
+      <p class="text-xl md:text-2xl font-light opacity-90">Hand-knitted mohair cardigan with unique natural stone buttons</p>
+      <a href="#order" class="mt-10 inline-block bg-white text-stone-900 px-10 py-4 rounded-full font-medium tracking-wider hover:bg-amber-100 transition">
+        Reserve Yours
+      </a>
+    </div>
+  </section>
+
+  <!-- Product Image Focus -->
+  <section class="max-w-5xl mx-auto px-6 py-20">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <img src="https://katavizyon-ctrl.github.io/LIYreal/attachments/image.png" 
+             alt="White mohair cardigan with natural stone buttons" 
+             class="w-full rounded-2xl shadow-2xl">
+      </div>
+      <div class="space-y-8">
+        <h2 class="text-5xl font-light leading-tight">A garment that carries memory.</h2>
+        <p class="text-lg leading-relaxed text-stone-600">
+          Each button is a stone chosen by hand — shaped by rivers, time, and chance. 
+          The mohair is as soft as cloud. Together they create something rare.
+        </p>
+        <div class="flex gap-8 text-sm">
+          <div>
+            <strong class="block">Limited Edition</strong>
+            <span class="text-stone-500">Only 33 pieces</span>
+          </div>
+          <div>
+            <strong class="block">Handcrafted</strong>
+            <span class="text-stone-500">Turkey</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section id="story" class="bg-white py-24">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-light mb-12">The Story</h2>
+      <div class="prose prose-stone mx-auto text-lg leading-relaxed">
+        <p>We believe clothing should hold memory.</p>
+        <p>The softest mohair, gathered from the highlands, meets stones that have traveled for thousands of years. Each button is different — just like each person who will wear this cardigan.</p>
+        <p>This is not fast fashion. This is slow, intentional, and deeply personal.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Details -->
+  <section id="details" class="max-w-6xl mx-auto px-6 py-20">
+    <h2 class="text-center text-4xl font-light mb-16">Details that matter</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="text-center">
+        <div class="text-6xl mb-4">☁️</div>
+        <h3 class="text-2xl font-light">Cloud Mohair</h3>
+        <p class="mt-3 text-stone-600">Ultra-soft Turkish mohair. Lightweight yet warm. Feels like wearing a hug.</p>
+      </div>
+      <div class="text-center">
+        <div class="text-6xl mb-4">🪨</div>
+        <h3 class="text-2xl font-light">River Stones</h3>
+        <p class="mt-3 text-stone-600">Each button is a unique natural stone. No two are alike. Chosen with care.</p>
+      </div>
+      <div class="text-center">
+        <div class="text-6xl mb-4">🧶</div>
+        <h3 class="text-2xl font-light">Hand-knitted</h3>
+        <p class="mt-3 text-stone-600">Made by skilled artisans using traditional techniques.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order -->
+  <section id="order" class="bg-stone-900 text-white py-24">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-light mb-8">Make it yours</h2>
+      <p class="text-xl text-stone-400 mb-12">Only 33 cardigans will ever exist.</p>
+      
+      <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-10">
+        <form class="space-y-8">
+          <div>
+            <label class="block text-sm mb-2">Size</label>
+            <div class="grid grid-cols-4 gap-3">
+              <button type="button" class="size-btn py-4 border border-white/30 rounded-2xl hover:border-white transition">XS</button>
+              <button type="button" class="size-btn py-4 border border-white/30 rounded-2xl hover:border-white transition">S</button>
+              <button type="button" class="size-btn py-4 border border-amber-400 bg-amber-400/10 rounded-2xl">M</button>
+              <button type="button" class="size-btn py-4 border border-white/30 rounded-2xl hover:border-white transition">L</button>
+            </div>
+          </div>
+
+          <button onclick="alert('Thank you! This is a demo. We will set up proper ordering soon.')" 
+                  class="w-full bg-white text-stone-900 py-6 rounded-3xl font-medium text-lg hover:bg-amber-100 transition">
+            Reserve for  ₺4,800
+          </button>
+        </form>
+      </div>
+
+      <p class="text-xs text-stone-500 mt-8">Ships in 10–14 days • Free shipping within Turkey</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-16 border-t">
+    <div class="max-w-6xl mx-auto px-6 text-center text-sm text-stone-500">
+      <p>Cloud & Stone © 2026 • A quiet rebellion against fast fashion</p>
+      <p class="mt-2">Handcrafted with love in Turkey</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple size button active state
+    document.querySelectorAll('.size-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('border-amber-400', 'bg-amber-400/10'));
+        btn.classList.add('border-amber-400', 'bg-amber-400/10');
+      });
+    });
+  </script>
+</body>
+</html>
